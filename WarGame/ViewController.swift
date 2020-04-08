@@ -52,9 +52,14 @@ class ViewController: UIViewController {
         }
         
     }
-
     
-
+    @IBAction func restart(_ sender: UIButton) {
+        
+        leftScoreLabel.text = "0"
+        rightScoreLabel.text = "0"
+        
+    }
+    
 
 }
 

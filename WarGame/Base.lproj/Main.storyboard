@@ -50,6 +50,7 @@
                                     </stackView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HYZ-ke-ltv">
                                         <rect key="frame" x="94" y="214" width="82" height="31"/>
+                                        <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <state key="normal" image="dealbutton"/>
                                         <connections>
                                             <action selector="dealTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dwd-uQ-ukF"/>
@@ -92,6 +93,20 @@
                                     </label>
                                 </subviews>
                             </stackView>
+                            <button opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cFP-Zq-IWQ">
+                                <rect key="frame" x="151.5" y="404" width="72" height="40"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="uff-sh-KdA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <state key="normal" title="Restart">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="restart:" destination="BYZ-38-t0r" eventType="touchUpInside" id="941-r8-zuK"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
@@ -102,11 +117,13 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="GEL-8W-MYg" secondAttribute="bottom" constant="15" id="VJl-ds-yTi"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Muh-7b-1TY" secondAttribute="trailing" constant="15" id="dcw-Sx-lqQ"/>
                             <constraint firstItem="0nB-0K-OM3" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="fSI-mN-16Z"/>
+                            <constraint firstItem="cFP-Zq-IWQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gls-9a-t7h"/>
                             <constraint firstItem="rWb-E0-djJ" firstAttribute="top" secondItem="0nB-0K-OM3" secondAttribute="bottom" constant="30" id="kSu-aB-csc"/>
                             <constraint firstItem="lP3-LM-DsS" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailing" id="l6o-h0-bE0"/>
                             <constraint firstItem="lP3-LM-DsS" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="oV3-Io-Pb6"/>
                             <constraint firstItem="0nB-0K-OM3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rOV-be-aEp"/>
                             <constraint firstItem="lP3-LM-DsS" firstAttribute="bottom" secondItem="8bC-Xf-vdC" secondAttribute="bottom" id="sDs-jx-5zl"/>
+                            <constraint firstItem="cFP-Zq-IWQ" firstAttribute="top" secondItem="rWb-E0-djJ" secondAttribute="bottom" constant="52" id="sHj-1w-hgL"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
