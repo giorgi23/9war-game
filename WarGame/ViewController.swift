@@ -51,12 +51,37 @@ class ViewController: UIViewController {
             
         }
         
+        if leftScore == 10 {
+            
+            let alert = UIAlertController(title: "You won!", message: "You got a score of 10 points. Awesome!", preferredStyle: .alert)
+            
+            alert.addAction(UIAlertAction(title: "OK, start new game", style: .default, handler: nil))
+            self.present(alert, animated: true, completion: nil)
+            startingOver()
+        }
+        
+        if rightScore == 10 {
+            
+            let alert = UIAlertController(title: "Computer won!", message: "Get 10 points first to win!", preferredStyle: .alert)
+            
+            alert.addAction(UIAlertAction(title: "OK, start new game", style: .default, handler: nil))
+            self.present(alert, animated: true, completion: nil)
+            startingOver()
+            
+        }
+        
     }
     
     @IBAction func restart(_ sender: UIButton) {
-        
-        leftScoreLabel.text = "0"
-        rightScoreLabel.text = "0"
+        startingOver()
+    }
+    
+    func startingOver () {
+       
+        leftScore = 0
+        rightScore = 0
+        leftScoreLabel.text = String(leftScore)
+        rightScoreLabel.text = String(rightScore)
         
     }
     
